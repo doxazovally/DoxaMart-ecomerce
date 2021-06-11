@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#118c8b">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order To"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#ffcc00"
+            android:textStyle="bold"
+            android:fontFamily="@font/salsa"/>
+
+        <!--Shop name-->
+        <TextView
+            android:id="@+id/shopNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order To"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:fontFamily="@font/caveat_brush"
+            android:textColor="#f21a7d"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f5f0f0" />
+
+        <!--Show cart items-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartItemsRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:listitem="@layout/row_cart_confirm"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <RelativeLayout
+            android:id="@+id/pricesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/sTotalLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="Sub Total:"
+                android:fontFamily="@font/salsa"
+                android:textColor="#ffcc00"/>
+
+            <TextView
+                android:id="@+id/sTotalTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="$10:"
+                android:fontFamily="@font/salsa"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffcc00"/>
+
+            <TextView
+                android:id="@+id/dFeeLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sTotalLabelTv"
+                android:fontFamily="@font/salsa"
+                android:padding="5dp"
+                android:text="Delivery Fee:"
+                android:textColor="#ffcc00"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dFeeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@id/sTotalLabelTv"
+                android:text="$12:"
+                android:fontFamily="@font/salsa"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffcc00"/>
+
+            <TextView
+                android:id="@+id/totalLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dFeeLabelTv"
+                android:fontFamily="@font/salsa"
+                android:padding="5dp"
+                android:text="Total Price:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffcc00"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@id/dFeeLabelTv"
+                android:text="$52:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/salsa"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffcc00"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/checkOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm your Order"
+            android:background="@drawable/button_06"
+            android:fontFamily="@font/salsa"
+            android:textColor="#f21a7d"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

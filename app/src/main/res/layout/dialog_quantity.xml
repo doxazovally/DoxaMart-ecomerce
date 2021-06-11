@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/brownLightcolor">
+
+        <ImageView
+            android:id="@+id/productIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_shopping_cart_accent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bs_button">
+
+            <TextView
+                android:id="@+id/P_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/salsa"
+                android:text="Product Name"
+                android:textColor="@color/colorBrown"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/P_Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/P_name"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:fontFamily="@font/salsa"
+                android:text="Product Quantity"
+                android:textColor="@color/colorBrown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/P_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/P_Q"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="7dp"
+                android:text="Product Description"
+                android:textColor="@color/colorBrown"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/P_DN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_10"
+                android:padding="10dp"
+                android:text="10% OFF"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+
+            <TextView
+                android:id="@+id/P_Op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
+                android:padding="5dp"
+                android:text="$20"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/P_Dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/P_Op"
+                android:fontFamily="@font/salsa"
+                android:padding="5dp"
+                android:text="$10"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/finalTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/salsa"
+                android:padding="10dp"
+                android:text="Final Price"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/numberBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/decrementBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:src="@drawable/ic_counter_subtract" />
+
+
+            <TextView
+                android:id="@+id/P_quantityNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/P_Op"
+                android:padding="1dp"
+                android:text="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/incrementBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:src="@drawable/ic_counter_add" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberBtn"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/P_deliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
+                android:padding="10dp"
+                android:text="Delivery Date"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/P_returnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/salsa"
+                android:padding="10dp"
+                android:text="Return Date"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/addToCartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttom_button_2"
+        android:fontFamily="@font/salsa"
+        android:padding="5dp"
+        android:text="Add to cart"
+        android:textAllCaps="false"
+        android:textColor="#ffcc00" />
+
+</LinearLayout>
+
+    </ScrollView>

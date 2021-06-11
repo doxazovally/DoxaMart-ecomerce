@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bottom sheet layout to display product details and edit/delete options-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/toobarRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f18904"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/bs_backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_back"/>
+
+        <ImageButton
+            android:id="@+id/delete_Btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete"
+            android:background="@null"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageButton
+            android:id="@+id/bs_edit_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/delete_Btn"
+            android:background="@null"
+            android:src="@drawable/ic_mode_edit" />
+
+        <TextView
+            android:id="@+id/bs_product_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/salsa"
+            android:text="Product Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/BproductIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_shopping"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BproductIcon"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/bs_discountNoteBtnTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_10"
+            android:padding="10sp"
+            android:text="10% OFF"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/bs_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="The Product Name"
+            android:textColor="@color/colorBrown"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="@font/salsa"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bs_descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBrown" />
+
+        <TextView
+            android:id="@+id/bs_CategoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Category"
+            android:textColor="@color/colorBrown"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:id="@+id/bs_QuantityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Quantity"
+            android:textColor="@color/colorBrown"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+
+            <TextView
+                android:id="@+id/Delivery_Days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Delivery Days:"
+                android:textColor="@color/colorBrown"/>
+
+        <TextView
+            android:id="@+id/return_Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Retutn Days:"
+            android:textColor="@color/colorBrown"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:id="@+id/bs_discountPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
+                android:text="$10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bs_OriginalPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15"
+                android:layout_toEndOf="@id/bs_discountPriceTv"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

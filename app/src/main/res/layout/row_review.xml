@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginBottom="1dp"
+    android:padding="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/RLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/R_profileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_profile"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/R_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/salsa"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RLL"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="5dp"
+            android:numStars="5"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/datetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RLL"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/ratingBar"
+            android:fontFamily="@font/salsa"
+            android:padding="2dp"
+            android:text="dd/MM/yyyy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/reviewTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetv"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/salsa"
+            android:padding="2dp"
+            android:text="Original review of the user"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

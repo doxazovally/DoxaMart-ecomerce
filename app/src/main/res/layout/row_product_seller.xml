@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="3dp"
+    app:cardBackgroundColor="#f4e3b1"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_07">
+
+        <ImageView
+            android:id="@+id/productIcon"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_shopping_cart_accent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/productIcon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discountNoteTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/button_10"
+                android:padding="5dp"
+                android:text="40% OFF"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/salsa"
+                android:padding="2dp"
+                android:text="Name"
+                android:textColor="#02231c"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantityTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/salsa"
+                android:padding="2dp"
+                android:text="Quantity"
+                android:textColor="#7d3f02" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/discountPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/salsa"
+                    android:padding="3dp"
+                    android:text="$20"
+                    android:textColor="#7d3f02"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/originalPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/discountPriceTv"
+                    android:fontFamily="@font/salsa"
+                    android:padding="3dp"
+                    android:text="$50"
+                    android:textColor="#7d3f02"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

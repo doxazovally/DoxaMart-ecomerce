@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C46507"
+    tools:context=".com.team.my_gorcery.activities.MainUserActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarSHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_08"
+        android:padding="9dp">
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/uM_profileImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_store"
+            app:c_border="true"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/uM_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/uM_profileImage"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/salsa"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#ffcc00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uM_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uM_Name"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/uM_profileImage"
+            android:fontFamily="@font/lato_light"
+            android:text="Phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#ffcc00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sM_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uM_phone"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/uM_profileImage"
+            android:fontFamily="@font/lato_light"
+            android:text="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#ffcc00"
+            android:textStyle="bold" />
+
+        <!--Tabs: products, orders-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/uM_profileImage"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rec_04"
+            android:orientation="horizontal">
+
+            <!--Tabs: products-->
+            <TextView
+                android:id="@+id/tabShop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rec_05"
+                android:fontFamily="@font/salsa"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Shops"
+                android:textColor="#7d3f02"/>
+
+
+            <!--Tabs: orders-->
+            <TextView
+                android:id="@+id/tabOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/salsa"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Orders"
+                android:textColor="#7d3f02" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--Tabs: shops UI-->
+    <RelativeLayout
+        android:id="@+id/shopsRl"
+        android:layout_below="@id/toolbarSHP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--RecycleView: show shops-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_shopnew"/>
+
+    </RelativeLayout>
+
+    <!--Tabs: orders UI-->
+    <RelativeLayout
+        android:id="@+id/ordersRl"
+        android:layout_below="@id/toolbarSHP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--recyclerView: orders UI-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ordersRv"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:stackFromEnd="true"
+            app:reverseLayout="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_order_user"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

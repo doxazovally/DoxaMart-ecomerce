@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/caveat_brush</item>
+        <item>@font/coiny</item>
+        <item>@font/euphoria_script</item>
+        <item>@font/lato</item>
+        <item>@font/lato_light</item>
+        <item>@font/lato_thin</item>
+        <item>@font/mystery_quest</item>
+        <item>@font/salsa</item>
+    </array>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_11"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/itemTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:padding="3dp"
+        android:fontFamily="@font/salsa"
+        android:textColor="#f21a7d"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/itemPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$20"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_below="@id/itemTitleTv"
+        android:textColor="#02231c"
+        android:fontFamily="@font/salsa"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemTitleTv"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/itemPriceEachTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="10/KG"
+        android:padding="3dp"
+        android:fontFamily="@font/salsa"
+        android:textColor="#02231c"/>
+
+    <TextView
+        android:id="@+id/itemQuantityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:text="[2]"
+        android:fontFamily="@font/salsa"
+        android:textColor="#02231c"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/itemRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemTitleTv"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/salsa"
+        android:background="@drawable/button_10"
+        android:text="Remove"
+        android:textColor="#ffffff"/>
+
+
+
+</RelativeLayout>

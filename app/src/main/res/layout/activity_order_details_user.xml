@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C46507"
+    tools:context=".com.team.my_gorcery.activities.OrderDetailsUserActivity">
+
+
+    <!--adding option (button) to write review in order details-->
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/add_prod_headding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cartitem_btn"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/itemOrderPage_backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@null"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/prod_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/salsa"
+            android:text="My Order Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#f4e3b1"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/writeReviewBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_rate" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_OI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:padding="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#f4e3b1"
+        app:cardCornerRadius="15dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/salsa"
+                android:layout_marginStart="2dp"
+                android:text="Order ID:"
+                android:textAllCaps="true"
+                android:padding="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#02231c"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderIdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/salsa"
+                android:text="1234567890"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBrown"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/salsa"
+                    android:layout_marginStart="2dp"
+                    android:padding="3dp"
+                    android:text="Date:"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#02231c"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:fontFamily="@font/salsa"
+                    android:text="02/06/2020"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBrown"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/salsa"
+                    android:text="Order Status:"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#02231c"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderStatusTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
+                    android:padding="3dp"
+                    android:text="In Progress"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/salsa"
+                    android:padding="3dp"
+                    android:layout_marginStart="2dp"
+                    android:text="Shop Name:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#02231c"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderShopNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
+                    android:text="Doxa"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBrown"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/salsa"
+                    android:padding="3dp"
+                    android:layout_marginStart="2dp"
+                    android:text="Items:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#02231c"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderTotalItemTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
+                    android:text="8"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBrown"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/salsa"
+                    android:layout_marginStart="2dp"
+                    android:padding="3dp"
+                    android:text="Amount:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#02231c"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderAmountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
+                    android:padding="3dp"
+                    android:text="$90"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBrown"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/salsa"
+                    android:layout_marginStart="2dp"
+                    android:padding="3dp"
+                    android:text="Delivery Address:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#02231c"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderD_AddressTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
+                    android:text="20 ugbowo road, Ubth"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBrown"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Ordered Items"
+        android:textAlignment="center"
+        android:textColor="#f4e3b1"
+        android:fontFamily="@font/salsa"
+        android:background="@drawable/buttom_button_2"
+        android:textStyle="bold"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_ordereditem" />
+
+
+</LinearLayout>

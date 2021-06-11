@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".com.team.my_gorcery.activities.shop_DetailsActivity">
+
+    <!--Shop details-->
+    <RelativeLayout
+        android:id="@+id/shop_details_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <ImageView
+            android:id="@+id/shop_full_Iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="#02231c" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#79000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/shop_full_name"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="ShopName"
+                android:fontFamily="@font/salsa"
+                android:textStyle="bold"
+                android:textColor="#f4e3b1" />
+
+            <TextView
+                android:id="@+id/shop_full_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_full_name"
+                android:layout_margin="3dp"
+                android:layout_marginStart="3dp"
+                android:text="Phone"
+                android:fontFamily="@font/salsa"
+                android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                android:id="@+id/shop_full_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_full_phone"
+                android:layout_margin="3dp"
+                android:layout_marginStart="3dp"
+                android:text="Email"
+                android:fontFamily="@font/salsa"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/shop_Open_Closed_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:padding="5dp"
+                android:text="Open"
+                android:fontFamily="@font/salsa"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/shop_full_deliveryFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_Open_Closed_Tv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Delivery Fee"
+                android:fontFamily="@font/salsa"
+                android:textColor="@color/colorWhite" />
+
+            <!--RatingBar avg -->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_below="@id/shop_full_deliveryFee"
+                android:layout_alignParentEnd="true"
+                android:numStars="5"
+                android:layout_marginTop="7dp"/>
+
+
+            <TextView
+                android:id="@+id/shop_full_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_full_email"
+                android:layout_margin="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="Address"
+                android:fontFamily="@font/salsa"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shop_call_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_call" />
+
+                <ImageButton
+                    android:id="@+id/shop_map_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_location" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/shop_toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#02231c"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/shop_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/ic_basket_cart_" />
+
+        <ImageButton
+            android:id="@+id/shop_backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/salsa"
+            android:textStyle="bold"
+            android:text="Shop Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#f4e3b1" />
+
+        <!--cart item count badge-->
+        <TextView
+            android:id="@+id/cartCounterTv"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:textColor="@color/colorWhite"
+            android:text="10"
+            android:textSize="8sp"
+            android:gravity="center"
+            android:background="@drawable/circle_1"
+            android:layout_alignParentEnd="true"/>
+
+        <!--show shop reviews-->
+        <ImageButton
+            android:id="@+id/reviewsBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@id/shop_cart"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_star"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <!--Products-->
+    <RelativeLayout
+        android:id="@+id/productsRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C46507"
+        android:layout_below="@id/shop_details_Rl">
+
+
+        <!--Search-->
+        <EditText
+            android:id="@+id/shop_searchProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/shop_filterProductBtn"
+            android:background="@drawable/shape_rec2"
+            android:drawableEnd="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="Search something..."
+            android:fontFamily="@font/salsa"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColorHint="#7d3f02" />
+
+        <ImageButton
+            android:id="@+id/shop_filterProductBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_filter" />
+
+        <TextView
+            android:id="@+id/shop_filteredProductTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_searchProduct"
+            android:padding="8dp"
+            android:text="Showing All"
+            android:fontFamily="@font/salsa"
+            android:textColor="#f4e3b1"
+            android:textSize="12sp" />
+
+        <!--RecycleView: show products-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/shop_filteredProductTv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_product_user" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

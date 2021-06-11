@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.team.my_gorcery"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/download"
+        android:label="Doxamart"
+        android:roundIcon="@drawable/download"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".com.team.my_gorcery.activities.SettingActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.OrderDetailsSeller" />
+        <activity android:name=".com.team.my_gorcery.activities.ShopReviewsActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.WriteReviewActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.OrderDetailsUserActivity" />
+        <activity
+            android:name=".com.team.my_gorcery.activities.shop_DetailsActivity"
+            android:windowSoftInputMode="stateHidden" /> <!-- hide keybord by default -->
+        <activity android:name=".com.team.my_gorcery.activities.edit_ProductActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.add_ProductActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.Edit_Profile_page_Seller_Activity" />
+        <activity android:name=".com.team.my_gorcery.activities.Edit_Profile_page_User_Activity" />
+        <activity android:name=".com.team.my_gorcery.activities.MainUserActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.MainSellerActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.Register_SellerActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.ForgotPassActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.RegisterActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.LoginActivity" />
+        <activity android:name=".com.team.my_gorcery.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+        <!-- Register service to allow to run in background-->
+        <service
+            android:name=".DoxaFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+
+        </service>
+
+    </application>
+
+</manifest>

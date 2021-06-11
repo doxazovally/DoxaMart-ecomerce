@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="3dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#f4e3b1"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_07">
+
+        <ImageView
+            android:id="@+id/productIcon"
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_shopping_cart_accent" />
+
+        <TextView
+            android:id="@+id/discountNoteTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button3"
+            android:padding="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:text="40% OFF"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/productIcon">
+
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:textColor="#02231c"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTv"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:text="Description"
+                android:textColor="#7d3f02" />
+
+
+
+            <TextView
+                android:id="@+id/quantityTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionTv"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Weight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#7d3f02" />
+
+            <TextView
+                android:id="@+id/addToCartTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_delivery"
+                android:layout_below="@id/quantityTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:drawableStart="@drawable/ic_shopping_basket"
+                android:drawablePadding="1dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="Add To Cart  "
+                android:textSize="14sp"
+                android:textColor="#ffffff" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionTv"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="65dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/button_delivery">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantityTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="22dp">
+
+                <TextView
+                    android:id="@+id/discountPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/salsa"
+                    android:text="$20"
+                    android:textSize="13sp"
+                    android:textColor="#7d3f02"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/originalPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@id/discountPriceTv"
+                    android:fontFamily="@font/salsa"
+                    android:textSize="13sp"
+                    android:text="$50"
+                    android:textColor="#7d3f02"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

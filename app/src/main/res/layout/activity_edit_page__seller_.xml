@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C46507"
+    tools:context=".com.team.my_gorcery.activities.Edit_Profile_page_Seller_Activity">
+
+    <LinearLayout
+        android:id="@+id/seller_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--ToolBar-->
+            <RelativeLayout
+                android:id="@+id/seller_profile_head"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/button_rect"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/eS_backBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_keyboard_arrow" />
+
+                <TextView
+                    android:id="@+id/write_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Set your profile and be the best you can, nobody"
+                    android:textSize="12sp"
+                    android:textColor="#451092"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/write_up"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:text="can be better than you in your world...."
+                    android:textSize="12sp"
+                    android:textColor="#451092"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/eS_gpsBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_gps" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/icon_key"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_rec2"
+                android:fontFamily="@font/caveat_brush"
+                android:padding="5dp"
+                android:text="My Profile"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#451092" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Sedit_Profile_Image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/icon_key"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="17dp"
+                android:src="@drawable/ic_profile"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="1dp" />
+
+            <EditText
+                android:id="@+id/sp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Sedit_Profile_Image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/shape_rec2"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="5dp"
+                android:hint="Full Name"
+                android:textColorHint="#451092"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/sp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/shape_rec2"
+                android:hint="Phone"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="5dp"
+                android:textColorHint="#451092"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/sp_Shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_phone"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawablePadding="5dp"
+                android:layout_marginBottom="17dp"
+                android:drawableStart="@drawable/ic_store"
+                android:background="@drawable/shape_rec2"
+                android:hint="Shop Name"
+                android:textColorHint="#451092"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/sp_deliveryFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_Shop"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/shape_rec2"
+                android:hint="Delivery Fee"
+                android:drawableStart="@drawable/ic_local_shipping_black_24dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#451092"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <LinearLayout
+                android:id="@+id/sPaddressL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_deliveryFee"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="17dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sp_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rec2"
+                    android:hint="Country"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/ic_loca"
+                    android:textColorHint="#451092"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/sp_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rec2"
+                    android:drawableStart="@drawable/ic_loca"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:textColorHint="#451092"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/sp_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rec2"
+                    android:drawableStart="@drawable/ic_loca"
+                    android:hint="City"
+                    android:textColorHint="#451092"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sp_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sPaddressL"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/shape_rec2"
+                android:hint="Address"
+                android:textColorHint="#451092"
+                android:drawableStart="@drawable/ic_loca"
+                android:inputType="textPostalAddress|textImeMultiLine"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+            <LinearLayout
+                android:id="@+id/SwitchLay"
+                android:layout_below="@id/sp_address"
+                android:layout_width="match_parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="8dp"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop Open"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="7dp"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/sP_Reg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SwitchLay"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/button2"
+                android:fontFamily="@font/salsa"
+                android:minWidth="120dp"
+                android:text="Update"
+                android:textColor="#451092" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
+

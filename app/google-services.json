@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "441268018621",
+    "firebase_url": "https://mygorcery.firebaseio.com",
+    "project_id": "mygorcery",
+    "storage_bucket": "mygorcery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441268018621:android:f1b732afbdbc2131cb46d4",
+        "android_client_info": {
+          "package_name": "com.team.my_gorcery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441268018621-top7lki8b16fvcc8o7ka2ok9pojl4pbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team.my_gorcery",
+            "certificate_hash": "30d27904ee2ce831c95acc49ea16b831bf15ad81"
+          }
+        },
+        {
+          "client_id": "441268018621-p1s57i1aokrl413gmalbksap5na22bi3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2lTBPYChAwzLkkF72hSakOZu0DPebq-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441268018621-p1s57i1aokrl413gmalbksap5na22bi3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
